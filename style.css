@@ -1,21 +1,24 @@
 * {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
-#header {
+header {
+    width: 100%;
+    height: 80px;
+    z-index: 10;
     display: flex;
     justify-content: end;
+    align-items: center;
+}
+main {
+    width: 100%;
 }
 #logo {
     width: 33px;
     height: 42px;
     position: absolute;
-    top: 24px;
-    left: 100px;
+    top: 22px;
+    left: 99px;
 }
 .header {
    font-size: 17px; 
@@ -31,7 +34,6 @@
 #first {
     width: 100%;
     height: 606px;
-    margin-top: 31px;
 }
 #inpicture1 {
     font-size: 79px;
@@ -114,14 +116,44 @@
     margin-right: 33px; 
     margin-left: 418px;;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .fa-bars {
-        display: flex;
-        width: 20px;
-        height: 20px;
+        display: flex !important;
+        justify-content: end;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 30px !important;
      }
-     nav > .header {
+    .header {
         display: none;
      }
-    
+    #div2 {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        top: 46px;
+        margin: 20px 0 120px;
+    }
+    #lastdiv1 {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px 50px 10px;
+    }
+    #lastdiv2 {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px 50px 10px;
+    }
+    .lastdiv {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px 50px 10px;
+    }
+    .six {
+        margin-right: 20px;
+    }
+    .lasthd {
+        margin: 0;
+    }
 }
