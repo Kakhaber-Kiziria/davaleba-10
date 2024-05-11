@@ -3,15 +3,15 @@
 	padding: 0;
 }
 header {
+    position: sticky;
+    background-color: white;
+    top: 0;
     width: 100%;
     height: 80px;
     z-index: 10;
     display: flex;
     justify-content: end;
     align-items: center;
-}
-main {
-    width: 100%;
 }
 #logo {
     width: 33px;
@@ -124,21 +124,29 @@ main {
         margin-right: 20px;
         font-size: 30px !important;
      }
-    .header {
+    #header {
+        display: none;
+     }
+    #first {
+        width: auto;
+     }
+    #inpicture1 {
+        display: none;
+     }
+    #inpicture2 {
         display: none;
      }
     #div2 {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         height: auto;
-        position: relative;
-        top: 46px;
-        margin: 20px 0 120px;
+        position: static;
     }
     #lastdiv1 {
         display: flex;
         justify-content: center;
-        margin: 0 20px 50px 10px;
+        margin: 20px 20px 50px 10px;
     }
     #lastdiv2 {
         display: flex;
@@ -151,9 +159,29 @@ main {
         margin: 0 20px 50px 10px;
     }
     .six {
-        margin-right: 20px;
+        margin: 0;
     }
     .lasthd {
-        margin: 0;
+        margin: 0 10px;
+    }
+}
+@media only screen and (max-width: 1383px) {
+    #div2 {
+        position: static;
+        height: auto;
+    }
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    #lastdiv1 {
+        margin: 30px 0;
+    }
+    #lastdiv2 {
+        margin: 30px 0;
+    }
+    .lastdiv {
+        margin: 30px 0;
     }
 }
